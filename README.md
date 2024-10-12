@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="https://github.com/borgesjuniior/follow-spy/blob/master/.github/icon.png" width="140px" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">Follow Spy</h1>
+<p align="center">Um app simples para você descobrir quem não te segue de volta no Instagram.</p>
 
-Currently, two official plugins are available:
+<h3 align="center">
+  <!-- <a href="https://github.com/maykbrito/mini-video-me/actions/workflows/release.yml" target="_blank">
+    <img alt="Build" src="https://github.com/maykbrito/mini-video-me/actions/workflows/release.yml/badge.svg" />
+  </a> -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <!-- Version -->
+  <a href="https://github.com/maykbrito/mini-video-me/releases">
+    <img alt="releases url" src="https://img.shields.io/github/v/release/maykbrito/mini-video-me?style=for-the-badge&labelColor=1C1E26&color=FF79C6">
+  </a>  
+  
+ <!-- License -->
+  <a href="./LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=FF79C6">
+  </a>
 
-## Expanding the ESLint configuration
+ <!-- Twitter -->
+  <a href="https://twitter.com/maykbrito" target="_blank">
+    <img alt="Twitter: maykbrito" src="https://img.shields.io/twitter/follow/maykbrito.svg?style=for-the-badge&labelColor=1C1E26&color=FF79C6&logo=twitter" />
+  </a>
+</h3>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<br />
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Features
