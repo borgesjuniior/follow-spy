@@ -1,31 +1,39 @@
-<p align="center">
-  <img src="https://github.com/borgesjuniior/follow-spy/blob/master/.github/icon.png" width="140px" />
-</p>
+# 🚀 Descubra Quem Não Te Segue de Volta no Instagram Com O Follow Spy
 
-<h1 align="center">Follow Spy</h1>
-<p align="center">Um app simples para você descobrir quem não te segue de volta no Instagram.</p>
+Follow Spy é um script simples que te ajuda a descobrir quem você segue, mas que não te segue de volta no Instagram.
 
-<h3 align="center">
-  <!-- <a href="https://github.com/maykbrito/mini-video-me/actions/workflows/release.yml" target="_blank">
-    <img alt="Build" src="https://github.com/maykbrito/mini-video-me/actions/workflows/release.yml/badge.svg" />
-  </a> -->
+## 🛠️ Funcionalidades
 
-  <!-- Version -->
-  <a href="https://github.com/maykbrito/mini-video-me/releases">
-    <img alt="releases url" src="https://img.shields.io/github/v/release/maykbrito/mini-video-me?style=for-the-badge&labelColor=1C1E26&color=FF79C6">
-  </a>  
-  
- <!-- License -->
-  <a href="./LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/license%20-MIT-1C1E26?style=for-the-badge&labelColor=1C1E26&color=FF79C6">
-  </a>
+- **Interface Amigável**: A interface é projetada para ser fácil de usar.
+- **Lista de Usuários**: O app lista os usuários que não te seguem de volta.
+- **Unfollow Direto**: Permite que você dê unfollow diretamente da interface.
 
- <!-- Twitter -->
-  <a href="https://twitter.com/maykbrito" target="_blank">
-    <img alt="Twitter: maykbrito" src="https://img.shields.io/twitter/follow/maykbrito.svg?style=for-the-badge&labelColor=1C1E26&color=FF79C6&logo=twitter" />
-  </a>
-</h3>
+## 🖼️ Imagem da Aplicação
 
-<br />
+<img src="https://github.com/borgesjuniior/follow-spy/blob/master/.github/main_list.png" alt="Screenshot da Aplicação"> <!-- Substitua pelo caminho correto da imagem -->
 
-# Features
+## 🛠️ Ferramentas Utilizadas
+- **Vite**
+- **React**
+- **TypeScript**
+- **Axios**
+
+## 📖 Como Usar
+
+1. **Acesse o Instagram** pelo seu navegador e faça login na sua conta.
+2. Abra o **console do desenvolvedor**:
+   - **Google Chrome**: Pressione `F12` ou clique com o botão direito e selecione **Inspecionar** > vá para a aba **Console**.
+   - **Mozilla Firefox**: Pressione `F12` ou clique com o botão direito e selecione **Inspecionar Elemento** > vá para a aba **Console**.
+3. Acesse o arquivo [script.js](./script.js), copie todo o código e cole no console do navegador.
+   - **Importante**: Se o navegador bloquear o comando de colar, digite `allow pasting` no console e tente colar novamente.
+4. Pressione `Enter` para rodar o código e aguarde o resultado.
+
+## 🎯 Objetivo
+Este app foi criado com o propósito de facilitar a identificação de perfis que não seguem você de volta no Instagram.
+
+## ⚠️ Atenção
+
+O uso deste script é de sua inteira responsabilidade. Eu não me responsabilizo por quaisquer usos incorretos ou indevidos que possam resultar em consequências negativas, incluindo bloqueio temporário ou permanente da sua conta no Instagram. Recomendo que não utilize este script com frequência excessiva, pois comportamentos automatizados podem ser considerados suspeitos pelo Instagram, podendo levar a restrições na sua conta. Utilize-o com cautela e esteja ciente dos riscos associados.
+
+### ⭐ Dê uma estrela no repositório se achar útil!
+O app foi desenvolvido e é mantido por mim. Agradeço seu apoio!
