@@ -57,7 +57,7 @@ function App() {
 
   useEffect(() => {
     getUnfollowers();
-  }, []);
+  }, [getUnfollowers]);
 
   const renderMainContent = () => {
     const { length: unfollowersCount } = unfollowers;

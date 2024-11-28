@@ -28,7 +28,7 @@ function Card({ user, setUnFollowers }: ICard) {
         return;
       }
     } catch (error) {
-      console.error('An error has occurred');
+      console.error('An error has occurred', error);
     } finally {
       setLoading(false);
     }
@@ -42,8 +42,13 @@ function Card({ user, setUnFollowers }: ICard) {
           src={user.profile_pic_url}
           alt="User Icon"
         />
-        <div className="flex items-center space-x-1 text-slate-100 font-semibold text-xl">
-          <span>{user.username}</span>{' '}
+        <div className="flex items-center space-x-1 text-slate-100 font-semibold text-xl hover:text-slate-300 transition-colors duration-150">
+          <a
+            href={`https://www.instagram.com/${user.username}/`}
+            target="_blank"
+          >
+            {user.username}
+          </a>{' '}
           {user.is_verified && <BadgeCheck stroke="#0f172a" fill="#0866ff" />}
         </div>
       </div>
