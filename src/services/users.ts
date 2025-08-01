@@ -17,7 +17,7 @@ export async function findAll({
     throw new Error('User ID not found in cookies.');
   }
 
-  const url = `/api/v1/friendships/${ds_user_id}/${friendshipType}/?count=12${
+  const url = `/api/v1/friendships/${ds_user_id}/${friendshipType}/?count=32${
     max_id ? `&max_id=${max_id}` : ''
   }`;
 

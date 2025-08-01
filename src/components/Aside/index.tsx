@@ -2,7 +2,7 @@ import { UserMinus } from 'lucide-react';
 
 function Aside() {
   return (
-    <aside className="w-72 p-6">
+    <aside className="w-56 p-6">
       <nav className="space-y-6 mt-6">
         <a
           href="/"

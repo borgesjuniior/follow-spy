@@ -13,7 +13,7 @@ function App() {
   const [isError, setIsError] = useState(false);
 
   async function getUsers(friendshipType: FriendshipType) {
-    const allUsers: User[] = [];
+    const allUsersMap = new Map<string, User>();
     let shouldFetch = true;
     let max_id = '';
 
@@ -25,12 +25,15 @@ function App() {
 
       const { next_max_id, big_list, users } = response.data;
 
-      max_id = next_max_id;
-      allUsers.push(...users);
+      for (const user of users) {
+        allUsersMap.set(user.id, user);
+      }
 
+      max_id = next_max_id;
       if (!big_list) shouldFetch = false;
     }
-    return allUsers;
+
+    return Array.from(allUsersMap.values());
   }
 
   const getUnfollowers = useCallback(async () => {
@@ -60,11 +63,9 @@ function App() {
   }, [getUnfollowers]);
 
   const renderMainContent = () => {
-    const { length: unfollowersCount } = unfollowers;
-
     if (isLoading) {
       return <Spinner />;
-    } else if (unfollowersCount === 0) {
+    } else if (unfollowers.length === 0) {
       return (
         <span className="text-xl">
           All the people you follow are following you back
@@ -90,10 +91,12 @@ function App() {
         <div className="flex flex-1 flex-col mx-8 space-y-4">
           <div className="flex justify-between">
             <h2 className="font-semibold text-3xl">
-              Non-followers {''}
-              <span className="text-slate-400">
-                {isLoading ? 'loading...' : unfollowers.length}
-              </span>
+              Non-followers: {''}
+                {isLoading ? (
+                  <span className="text-slate-500">Loading</span>
+                ) : (
+                  <span className="text-red-500">{unfollowers.length}</span>
+                )}
             </h2>
           </div>
           <main className="bg-zinc-800 border-solid border-1 border-slate-800 max-h-[774px] min-h-[774px] space-y-3 px-6 py-4 overflow-y-auto rounded">
