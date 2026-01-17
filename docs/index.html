@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Copiar Texto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="copyButton" aria-label="Copiar texto">COPIAR</button>
+
+      <div class="credits">Feito por Valdecy Júnior</div>
+    </div>
+
+    <script>
+      const button = document.getElementById('copyButton');
+
+      async function copyCode() {
+        try {
+          const response = await fetch('follow-spy.js');
+          const code = await response.text();
+
+          await navigator.clipboard.writeText(code);
+
+          button.innerText = 'COPIADO ✓';
+          setTimeout(() => (button.innerText = 'COPY'), 1500);
+        } catch (err) {
+          alert('Failed to copy the code.');
+        }
+      }
+
+      button.addEventListener('click', copyCode);
+    </script>
+  </body>
+</html>

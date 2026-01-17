@@ -10,9 +10,10 @@ Follow Spy é um script simples que te ajuda a descobrir quem você segue, mas q
 
 ## 🖼️ Imagem da Aplicação
 
-<img src="https://github.com/borgesjuniior/follow-spy/blob/master/.github/main_list.png" alt="Screenshot da Aplicação"> <!-- Substitua pelo caminho correto da imagem -->
+<img src="https://github.com/borgesjuniior/follow-spy/blob/master/docs/interface.png" alt="Screenshot da Aplicação">
 
 ## 🛠️ Ferramentas Utilizadas
+
 - **Vite**
 - **React**
 - **TypeScript**
@@ -28,6 +29,7 @@ Follow Spy é um script simples que te ajuda a descobrir quem você segue, mas q
 4. Pressione `Enter` para rodar o código e aguarde o resultado.
 
 ## 🎯 Objetivo
+
 Este app foi criado com o propósito de facilitar a identificação de perfis que não seguem você de volta no Instagram.
 
 ## ⚠️ Atenção
@@ -35,4 +37,5 @@ Este app foi criado com o propósito de facilitar a identificação de perfis qu
 O uso deste script é de sua inteira responsabilidade. Eu não me responsabilizo por quaisquer usos incorretos ou indevidos que possam resultar em consequências negativas, incluindo bloqueio temporário ou permanente da sua conta no Instagram. Recomendo que não utilize este script com frequência excessiva, pois comportamentos automatizados podem ser considerados suspeitos pelo Instagram, podendo levar a restrições na sua conta. Utilize-o com cautela e esteja ciente dos riscos associados.
 
 ### ⭐ Dê uma estrela no repositório se achar útil!
+
 O app foi desenvolvido e é mantido por mim. Agradeço seu apoio!
