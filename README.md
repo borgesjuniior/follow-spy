@@ -24,7 +24,7 @@ Follow Spy é um script simples que te ajuda a descobrir quem você segue, mas q
 1. **Acesse o Instagram** pelo seu navegador e faça login na sua conta.
 2. Abra o **console do desenvolvedor**:
    - **Google Chrome**: Pressione `F12` ou clique com o botão direito e selecione **Inspecionar** > vá para a aba **Console**.
-3. Acesse o site [copy and paste](https://borgesjuniior.github.io/copy-and-paste/), clique no botão para copiar o código e cole no console do navegador.
+3. Acesse o site [copy and paste](https://borgesjuniior.github.io/follow-spy/), clique no botão para copiar o código e cole no console do navegador.
    - **Importante**: Se o navegador bloquear o comando de colar, digite `allow pasting` no console e tente colar novamente.
 4. Pressione `Enter` para rodar o código e aguarde o resultado.
 
